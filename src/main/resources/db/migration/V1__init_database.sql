@@ -1,4 +1,6 @@
-drop table if exists book, hibernate_sequence;
+drop table if exists book;
+drop table if exists hibernate_sequence;
+
 create table book
 (
     id        bigint not null,
@@ -7,7 +9,6 @@ create table book
     title     varchar(255),
     primary key (id)
 ) engine = InnoDB;
-
 
 create table hibernate_sequence
 (
